@@ -1,19 +1,21 @@
-def LHS(a,b):
-    c = (a-b) * (a-b)
+def lhs(a, b):
+    c = (a-b) ** 2
     return c
 
-def RHS(a,b):
-    c = (a*a) - (2 *a * b) + (b*b)
+
+def rhs(a, b):
+    c = (a ** 2) - (2 * a * b) + (b * b)
     return c
+
 
 num_a = int(input("Enter a number: "))
 num_b = int(input("Enter another number"))
 
-lhs = LHS(num_a, num_b)
-rhs = RHS(num_a, num_b)
+ls = lhs(num_a, num_b)
+rs = lhs(num_a, num_b)
 
-if lhs == rhs:
-    print ("LHS equals RHS proved")
+if ls == rs:
+    print("LHS equals RHS proved")
 
 
 
